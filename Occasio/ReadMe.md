@@ -5,15 +5,24 @@ Dependencies:
 4.spring web
 5.springboot dev tools
 add dependency in pom.xml
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 <dependency>
-        <groupId>org.apache.tomcat.embed</groupId>
-        <artifactId>tomcat-embed-jasper</artifactId>
-        <scope>provided</scope>
-    </dependency>
-    <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>jstl</artifactId>
-    </dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.5.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.5.0</version>
+</dependency>
+and change the version of parent class to 2.5.2
 
 edit application properties with mysql connection and jsp access
 create folder webapp under main
